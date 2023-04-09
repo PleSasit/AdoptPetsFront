@@ -12,6 +12,8 @@ import { ListComponent } from './components/list/list.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { ContactComponent } from './contact/contact.component';
+import { NavbarComponent } from './navbar/navbar.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +23,9 @@ import { ContactComponent } from './contact/contact.component';
     AddPetsComponent,
     DetailsComponent,
     ListComponent,
-    ContactComponent
+    ContactComponent,
+    NavbarComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

@@ -1,1 +1,42 @@
-<p>list works!</p>
+<div class="container">
+    <div
+      class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom"
+    >
+      <h2 class="h2">Pet List</h2>
+    </div>
+  
+    <div class="table-responsive">
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th scope="col">Id</th>
+            <th scope="col">Name</th>
+            <th scope="col">Age</th>
+            <th scope="col">Description</th>
+            <th scope="col">Img</th>
+            <th class="text-center" scope="col">Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let pet of Pets; let i = index">
+            <th scope="row">{{ pet._id }}</th>
+            <td>{{ pet.name }}</td>
+            <td>{{ pet.Age }}</td>
+            <td>{{ pet.Description }}</td>
+            <td>{{ pet.Img }}</td>
+            <td class="text-center">
+              <button
+                class="btn btn-sm btn-primary"
+                routerLink="/edit/{{ pet._id }}">
+                Edit
+              </button>
+              <button class="btn btn-sm btn-danger" (click)="delete(pet._id, i)">
+                Delete
+              </button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  
