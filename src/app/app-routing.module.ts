@@ -10,7 +10,7 @@ import { FooterComponent } from './footer/footer.component';
 import { HomeComponent } from './home/home.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { ContactComponent } from './contact/contact.component';
-
+import{LoginComponent}from'./components/login/login.component';
 const routes: Routes = [
   { path: '', pathMatch: 'full', redirectTo: '/add-pets' },
   { path: 'list', component: ListComponent },
@@ -22,7 +22,8 @@ const routes: Routes = [
   { path: 'AboutUs', component: AboutUsComponent },
   { path: 'Contact', component: ContactComponent },
   { path: 'signUp', component: SignUpComponent },
-  { path: 'SignUpPage', component: SignUpPageComponent },
+  { path: 'SignUp', component: SignUpPageComponent },
+  { path: 'Login', component: LoginComponent },
 ];
 
 @NgModule({
