@@ -16,6 +16,9 @@ import {DogComponent} from './components/dog/dog.component';
 import {CatComponent} from './components/cat/cat.component';
 import {OtherpetComponent} from './components/otherpet/otherpet.component';
 
+
+import{LoginComponent}from'./components/login/login.component';
+
 const routes: Routes = [
   { path: '', pathMatch: 'full', redirectTo: '/add-pets' },
   { path: 'list', component: ListComponent },
@@ -27,12 +30,17 @@ const routes: Routes = [
   { path: 'AboutUs', component: AboutUsComponent },
   { path: 'Contact', component: ContactComponent },
   { path: 'signUp', component: SignUpComponent },
+
   { path: 'SignUpPage', component: SignUpPageComponent },
   { path: 'aboutus', component: AboutusComponent},
   { path: 'rehome', component: RehomeComponent},
   { path: 'dog', component: DogComponent},
   { path: 'cat', component: CatComponent},
   { path: 'otherpet', component: OtherpetComponent},
+
+  { path: 'SignUp', component: SignUpPageComponent },
+  { path: 'Login', component: LoginComponent },
+
 ];
 
 @NgModule({
