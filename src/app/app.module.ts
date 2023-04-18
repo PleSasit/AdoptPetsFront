@@ -16,6 +16,11 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
 import { SignUpPageComponent } from './pages/sign-up-page/sign-up-page.component';
 import { SignUpComponent } from './components/sign-up/sign-up.component';
+import { AboutusComponent } from './aboutus/aboutus.component';
+import { RehomeComponent } from './pages/rehome/rehome.component';
+import { DogComponent } from './pages/dog/dog.component';
+import { CatComponent } from './pages/cat/cat.component';
+import { OtherpetComponent } from './pages/otherpet/otherpet.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +34,12 @@ import { SignUpComponent } from './components/sign-up/sign-up.component';
     NavbarComponent,
     FooterComponent,
     SignUpPageComponent,
-    SignUpComponent
+    SignUpComponent,
+    AboutusComponent,
+    RehomeComponent,
+    DogComponent,
+    CatComponent,
+    OtherpetComponent
   ],
   imports: [
     BrowserModule,
